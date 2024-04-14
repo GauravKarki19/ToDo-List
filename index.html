@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List - the Code School</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/f30fac2c61.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <h2 class="todolist">
+            <p>ToDo</p>
+            <img src="todoicon-removebg-preview.png"></h2>
+        <div class="todo-app">
+            <div class="row">
+                <input type="text" name="" id="input-box" placeholder="Enter your Task">
+                <button class="add-button">Add Task</button>
+            </div>
+
+            <div class="filters">
+                <div data-filter="all" style="border: none; background: none;" class="filter">All </div>
+                <div data-filter="pending" style="border: none; background: none;" class= "filter">Pending </div>
+                <div data-filter="completed" style="border: none; background: none;" class="filter">Completed </div>
+            </div>
+            <div class="todos-container">
+                <ul class="todos">
+                    <!-- <li class="checked">Task 1</li>
+                    <li>Task 2</li>
+                    <li>Task 3</li> -->
+                </ul>
+                <img class="empty-image" src="./empty.svg">
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
