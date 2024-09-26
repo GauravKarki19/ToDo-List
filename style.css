@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Sedan:ital@0;1&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -13,228 +12,155 @@
     padding: 10px;
 }
 
-.todolist{
-    position: relative;
-    top: 90px;
-    left: 0%;
-    width: 540px;
-    height: 50px;
-    margin:15px auto 20px;
-}
-
-.todolist p{
-    font-family: "Sedan", serif;
-    position: relative;
-    left: 32%;
-    font-size: 1.25em;
-}
-
-.todolist img{
-    width: 75px;
-    height: 75px;
-    position: absolute;
-    left: 51%;
-    margin-left: 15px;
-}
-
 .todo-app{
-    position: relative;
-    top: -30px;
     width: 100%;
-    max-width: 530px;
-    background: #eae8e8;
-    margin:150px auto 20px;
-    border-radius: 20px;
-    padding: 40px 30px 70px;
+    height: 450px;
+    max-width: 540px;
     background: #EAD8C0;
+    margin:150px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 50px;
+    box-shadow: 0px 0px 50px #afafaf;
+    box-shadow: 0px 0px 30px #afafaf;
 }
 
 h2{
-    color:#e9ecf1;
+    color:#002765;
     display: flex;
     align-items: center;
     margin-bottom: 50px;
-    font-size: 35px;
+    left: 120px;
+    font-size: 30px;
     position: relative;
-    left: 26%;
+}
+
+.todo-app h2 img{
+    position: absolute;
+    right: 230px;
+    width: 90px;
+    margin-left: 20px;
 }
 
 .row{
-    position: relative;
-    width: 90%;
-    left: 5%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: #b3b4b7b5; 
+    border: none;
+    outline: 4px groove transparent;
     border-radius: 30px;
-    padding-left: 10px;
+    padding-left: 20px;
     margin-bottom: 25px;
+    box-shadow: 0px 0px 10px #5d5d5d;
 }
 
 .row input{
-    flex: 1;
+    flex: 1; 
     border:none ;
     outline: none;
     padding: 10px;
     background: transparent;
-    font-size: 15px;
+    font-size: 20px;
     font-weight: 300;
     letter-spacing: 1px;
 }
-
 .row input::placeholder{
     color: #1e008d;
-}
-
-.empty-image {
-    width: 80%;
-    margin: 5px 35px 0;
-    display: block;
-}
-
-.todo {
-    position: relative;
-    left: 8%;
-    list-style: none;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #8C6A5D;
-    border-radius: 15px;
-    margin: 10px 0;
-    padding: 10px 12px;
-    width: 85%;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    transition: all 0.2s ease;
-}
-  
-.todo:first-child {
-    margin-top: 0;
-}
-  
-.todo:last-child {
-    margin-bottom: 0;
-}
-  
-.todo:hover {
-    background-color:rgba(205, 92, 92, 0.502);
-}
-  
-.todo label {
-    cursor: pointer;
-    width: fit-content;
-    display: flex;
-    align-items: center;
-    font-family: 'Roboto', sans-serif;
-    color: #eee;
-}
-  
-.todo span {
-    padding-left: 20px;
-    position: relative;
-    cursor: pointer;
-}
-  
-span::before {
-    content: "";
-    height: 20px;
-    width: 20px;
-    position: absolute;
-    margin-left: -30px;
-    border-radius: 100px;
-    border: 2px solid #e6b7eca1;
-}
-
-input[type='checkbox'] {
-    visibility: hidden;
-}
-  
-.todo:hover input:checked + span::before, input:checked + span::before {
-    background: url(./checked.png);
-    background-size: cover;
-}
-  
-.todo:hover span::before {
-    border-color: #eee;
-}
-  
-.todo .delete-btn  {
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-    color: #eee;
-    font-size: 24px;
 }
 
 .row button{
     border: none;
     outline: none;
-    padding: 17px 25px;
+    padding: 16px 30px;
     background: indianred;
     color: #fff;
-    font-size: 17px;
-    font-weight: 500;
+    font-size: 18px;
+    font-weight: 600;
     cursor: pointer;
-    border-radius: 40px;
+    border-radius: 30px;
     margin: 0px;
 }
-
-.filters {
-    display: flex;
-    justify-content: spacing;
-    margin-bottom: 10px;
-}
-
-.filter{
-  cursor: pointer;
-  color: black;
-  position: relative;
-  font-size: medium;
-  left: 27%;
-  text-decoration: dashed;
-  transition: color 0.3s;
-  margin-right:30px;
-}
-
-.filter:after{
-    content: '';
-    position: absolute;
-    background-color: indianred;
-    height: 3px;
-    width: 0;
-    left: 0;
-    bottom: -6px;
-    transition: 0.3s;
-}
-
-.filter:hover {
-  color: indianred;
-}
-
-.filter:hover:after{
-    width: 100%;
-}
-
-.todos-container  {
-    height: 300px;
+.todos{
+    height: 200px;
     overflow: overlay;
 }
-  
-.todos-container::-webkit-scrollbar-track  {
+
+.todos::-webkit-scrollbar-track  {
     background: rgb(247, 247, 247);
     border-radius: 20px
 }
   
-.todos-container::-webkit-scrollbar  {
+.todos::-webkit-scrollbar  {
     width: 0;
 }
   
-.todos-container:hover::-webkit-scrollbar  {
+.todos:hover::-webkit-scrollbar  {
     width: 7px;
 }
   
-.todos-container::-webkit-scrollbar-thumb  {
+.todos::-webkit-scrollbar-thumb  {
     background: #d5d5d5;
     border-radius: 20px;
+}
+
+ul li{
+    list-style: none;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+    margin-block: 10px;
+}
+
+ul li::before{
+    content: '';
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background: url('unchecked.png');
+    background-size: cover;
+    background-position: center;
+    top:7.5px;
+    left: 8px;
+}
+
+ul li.checked{
+    background: #8C6A5D;;
+    color: #fff;
+    border-radius: 50px;
+}
+
+ul li.checked::before{
+    background: url('checked.png');
+    background-size: cover;
+}
+
+ul li span{
+    position: absolute;
+    top: 7.5px;
+    margin-right: 10px;
+    width: 30px;
+    height: 30px;
+    font-size: 22px;
+    color: #a73737;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+ul li.checked span{
+    color: #ffffff;
+}
+
+ul li.checked span:hover{
+    background: #fff;
+    color: #ba5555;
+}
+
+ul li span:hover{
+    background: #c25050;
+    color: #fff;
 }
